@@ -1,12 +1,8 @@
 # Template
 
-Template creation for Web Development Project.
+Template creation for [Bruxelles Formation](https://www.bruxellesformation.brussels/).
 
 Using [node.js](https://nodejs.org/en/).
-
-- Clone Project,
-- Installation : npm i (cmd),
-- gulp (cmd) to launch browserSync and run all services.
 
 ## Dependencies npm
 
