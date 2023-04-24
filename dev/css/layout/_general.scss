@@ -1,0 +1,22 @@
+h1,h2,h3,h4,h5,h6{
+  font-family: $title-font;
+  margin: 0;
+}
+body{
+  font-family: $text-font;
+  scroll-behavior: smooth;
+  color: $color-text;
+}
+.wrapper{
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+  @include anim(.3s);
+}
+section{
+  padding: 3% 0;
+}

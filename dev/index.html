@@ -3,6 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
   <link rel="stylesheet" href="css/styles.min.css">
   <title>Bruxelles Formation - Former pour l'emploi</title>
 </head>
@@ -11,19 +15,27 @@
   <nav class="main__nav">
     <div class="main__nav__logo">
       <a href="">
-        <img src="" alt="Bruxelles Formation Logo">
+        <img src="../img/logos/bf-color.svg" alt="Bruxelles Formation Logo">
       </a>
     </div>
     <div class="main__nav__links">
       <a href="">Accueil</a>
       <a href="">Formations</a>
-      <a href="">Contact</a>
-      <a href="">Jobs</a>
       <a href="">A propos</a>
+      <a href="">Partenaires</a>
+      <a href="">Presse</a>
+      <a href="">Jobs</a>
+      <a href="">Contact</a>
     </div>
     <div class="main__nav__help">
       <a href="">
-        <img src="" alt="Aide">
+        <img src="../img/pictos/help.png" alt="Aide">
+      </a>
+      <a href="">
+        <img src="../img/pictos/search.png" alt="Recherche">
+      </a>
+      <a href="">
+        <img src="../img/pictos/sunny.png" alt="Thème">
       </a>
     </div>
   </nav>
@@ -33,28 +45,135 @@
     <span></span>
   </div>
   <header class="header">
-    <!-- Banner Section -->
+    <!-- Slider main container -->
+    <div class="swiper header__swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="header__content wrapper">
+            <h1>de la formation à l'emploi</h1>
+            <span>Trouvez les formations faites pour vous</span>
+            <a href="#" class="header__btn">Nos Formations</a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="header__content wrapper">
+            <h1>de la formation à l'emploi</h1>
+            <span>Trouvez les formations faites pour vous</span>
+            <a href="#" class="header__btn">Nos Formations</a>
+          </div>
+        </div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
   </header>
-  <main class="main">
+  <main class="main wrapper">
     <section class="news">
+      <div class="section_title">
+        <h2 class="h2">Actualités</h2>
+      </div>
       <div class="news__primary">
         <article class="news__primary__card">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium debitis molestiae tempora voluptatem sequi ea non asperiores quos pariatur vero ut, cumque veritatis alias in fugit tenetur nisi sit delectus.</p>
+          <div>
+            <img src="../img/news/Affiche_A3_Agent de sécurité Securail_Chiara & Ayrton.png" alt="news">
+          </div>
+          <div>
+            <h3>Vous voulez faire partie des nouveaux Agents de sécurité de la SNCB ?</h3>
+          </div>
+          <hr>
+          <div>
+            <a href="">Formation</a>
+            <a href="">Evenement</a>
+            <a href="">Entreprise</a>
+          </div>
+          <div>
+            <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la miseen page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble  des morceauxde texte pour réaliser un livre spécimen de polices de texte</p>
+          </div>
+          <div>
+            <a href="" class="news__primary__card__btn">En savoir plus</a>
+          </div>
         </article>
       </div>
       <div class="news__secondary">
-        <article class="news__secondary__card">          
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium debitis molestiae tempora voluptatem sequi ea non asperiores quos pariatur vero ut, cumque veritatis alias in fugit tenetur nisi sit delectus.</p>
+        <article class="news__secondary__card card1">          
+          <div>
+            <img src="../img/news/formtruck.jpg" alt="news">
+          </div>
+          <div class="news__secondary__card__title">
+            <h3>Le Formtruck reprend la route</h3>
+          </div>
+          <div class="news__secondary__card__tag">
+            <a href="">Formation</a>
+            <a href="">Evenement</a>
+            <a href="">Entreprise</a>
+          </div>
+          <div class="news__secondary__card__text">
+            <p>Le Formtruck de Bruxelles Formation et de ses partenaires retourne dans les quartiers à la rencontre des Bruxellois et des Bruxelloises.</p>
+          </div>
+          <div class="news__secondary__card__cta">
+            <a href="" class="">En savoir plus</a>
+          </div>
         </article>
-        <article class="news__secondary__card">          
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium debitis molestiae tempora voluptatem sequi ea non asperiores quos pariatur vero ut, cumque veritatis alias in fugit tenetur nisi sit delectus.</p>
+        <article class="news__secondary__card card2">          
+          <div>
+            <img src="../img/news/partenariat.jpg" alt="news">
+          </div>
+          <div class="news__secondary__card__title">
+            <h3>Appel à partenariat - mise en œuvre de parcours de formation</h3>
+          </div>
+          <div class="news__secondary__card__tag">
+            <a href="">Formation</a>
+            <a href="">Evenement</a>
+            <a href="">Entreprise</a>
+          </div>
+          <div class="news__secondary__card__text">
+            <p>Bruxelles Formation relance, avec le soutien d’Actiris, l’appel à partenariat « sécurisation des parcours » pour les chercheurs et chercheuses d’emploi de moins de 30 ans, éloigné du marché de l’emploi.</p>
+          </div>
+          <div class="news__secondary__card__cta">
+            <a href="" class="">En savoir plus</a>
+          </div>
         </article>
-        <article class="news__secondary__card">          
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium debitis molestiae tempora voluptatem sequi ea non asperiores quos pariatur vero ut, cumque veritatis alias in fugit tenetur nisi sit delectus.</p>
+        <article class="news__secondary__card card3">          
+          <div>
+            <!-- <img src="../img/news/formtruck.jpg" alt="news"> -->
+          </div>
+          <div class="news__secondary__card__title">
+            <h3>Adobe Creative Cloud - Création d'un design web</h3>
+          </div>
+          <div class="news__secondary__card__tag">
+            <a href="">Formation</a>
+          </div>
+          <div class="news__secondary__card__text">
+            <p>Découvrez le potentiel d’Adobe Creative Cloud pour créer des documents web en abordant la création de maquettes de site web, de pictogrammes et visuels créatifs.</p>
+          </div>
+          <div class="news__secondary__card__cta">
+            <a href="" class="">En savoir plus</a>
+          </div>
         </article>
-        <article class="news__secondary__card">          
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium debitis molestiae tempora voluptatem sequi ea non asperiores quos pariatur vero ut, cumque veritatis alias in fugit tenetur nisi sit delectus.</p>
-        </article>
+        <!-- <article class="news__secondary__card card4">          
+          <div>
+            <img src="../img/news/adobe-creative-cloud.jpg" alt="news">
+          </div>
+          <div class="news__secondary__card__title">
+            <h3>Adobe Creative Cloud - Création d'un design web</h3>
+          </div>
+          <div class="news__secondary__card__tag">
+            <a href="">Formation</a>
+            <a href="">Evenement</a>
+            <a href="">Entreprise</a>
+          </div>
+          <div class="news__secondary__card__text">
+            <p>Découvrez le potentiel d’Adobe Creative Cloud pour créer des documents web en abordant la création de maquettes de site web, de pictogrammes et visuels créatifs.</p>
+          </div>
+          <div class="news__secondary__card__cta">
+            <a href="" class="">En savoir plus</a>
+          </div>
+        </article> -->
       </div>
     </section>
     <section class="session__info">
@@ -143,6 +262,7 @@
   <footer class="footer">
     
   </footer>
-<script src="js/script.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 </html>
