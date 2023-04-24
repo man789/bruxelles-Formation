@@ -163,3 +163,24 @@
     grid-area: cta;
   }
 }
+
+.session__info{
+  background-color: #EFF6FA;
+  .wrapper{
+    display: grid;
+    grid-template-areas: "title title"
+    "formation calendar";
+    gap: 2rem;
+  }
+  .session__section{
+    grid-area: title;
+  }
+  &__formation{
+    grid-area: formation;
+    
+  }
+  &__calendar{
+    grid-area: calendar;
+
+  }
+}
