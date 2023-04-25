@@ -171,16 +171,178 @@
     grid-template-areas: "title title"
     "formation calendar";
     gap: 2rem;
+    grid-template-columns: 1fr 1fr;
   }
   .session__section{
     grid-area: title;
   }
   &__formation{
     grid-area: formation;
-    
+    border-right: 1px solid $color-text;
+    padding-right: 4rem;
+    display: flex;
+    flex-direction: column;
   }
   &__calendar{
     grid-area: calendar;
+    padding-left: 2rem;
 
+  }
+}
+.session__info__formation__card{
+  display: grid;
+  grid-template-areas: "title title"
+  "text cta";
+  grid-template-columns: 2fr 1fr;
+  border: 1px solid $color-text;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: white;
+  &__title{
+    grid-area: title;
+    border-bottom: 1px solid $color-text;
+    padding-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+  &__text{
+    grid-area: text;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    p{
+      margin: 0;
+      font-weight: 600;
+    }
+    p:nth-child(1){
+      margin-bottom: 1rem;
+    }
+    span{
+      display: block;
+      font-weight: 500;
+    }
+  }
+  &__cta{
+    grid-area: cta;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    a{
+      border: 1px solid $color-text;
+      padding: 0.8rem;
+      background-color: $color-text;
+      color: $color-white;
+      display: block;
+      width: fit-content;
+      transition: .3s ease-in-out all;
+      &:hover{
+        border: 1px solid $color-text;
+        color: $color-text;
+        background-color: transparent;
+      }
+    }
+  }
+}
+.session__info__formation__more{
+  margin-top: auto;
+  a{
+    border: 1px solid $color-text;
+    padding: 0.8rem;
+    background-color: transparent;
+    color: $color-text;
+    display: block;
+    width: fit-content;
+    transition: .3s ease-in-out all;
+    &:hover{
+      border: 1px solid $color-text;
+      color: $color-white;
+      background-color: $color-text;
+    }
+  }
+}
+.session__info__calendar{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  &__card{
+    display: flex;
+    gap: 2rem;
+    &__date{
+      background-color: white;
+      border-radius: 5px;
+      padding: 1rem;
+      span{
+        display: block;
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 600;
+      }
+    }
+    &__text{
+      font-size: 1.3rem;
+      font-weight: 500;
+    }
+  }
+}
+.session__info__calendar__more{
+  margin-top: auto;
+  a{
+    border: 1px solid $color-text;
+    padding: 0.8rem;
+    background-color: transparent;
+    color: $color-text;
+    display: block;
+    width: fit-content;
+    transition: .3s ease-in-out all;
+    &:hover{
+      border: 1px solid $color-text;
+      color: $color-white;
+      background-color: $color-text;
+    }
+  }
+}
+
+
+
+.result{
+  background: #144070;
+  color: white;
+  h2{
+    font-size: 2.7rem;
+    margin-bottom: 2rem;
+  }
+  &__content{
+    display: flex;
+    gap: 1rem;
+    > div{
+      width: calc(100%/3);
+      padding: 1rem;
+      border: 1px solid white;
+      border-radius: 5px;
+      background-color: rgba($color: #ffffff, $alpha: 0.1);
+      span:nth-of-type(1){
+        display: block;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+      }
+      span:nth-of-type(2){
+        display: block;
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+.partenaires__logo{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  img{
+    width: 100px;
   }
 }
