@@ -7,6 +7,7 @@
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
 />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/styles.min.css">
   <title>Bruxelles Formation - Former pour l'emploi</title>
 </head>
@@ -14,28 +15,54 @@
 
   <nav class="main__nav">
     <div class="main__nav__logo">
-      <a href="">
-        <img src="../img/logos/bf-color.svg" alt="Bruxelles Formation Logo">
+      <a href="index.html">
+        <img src="img/logos/bf-color.svg" alt="Bruxelles Formation Logo">
       </a>
     </div>
     <div class="main__nav__links">
-      <a href="">Accueil</a>
-      <a href="">Formations</a>
-      <a href="">A propos</a>
-      <a href="">Partenaires</a>
-      <a href="">Presse</a>
-      <a href="">Jobs</a>
-      <a href="">Contact</a>
+      <!-- <a href="index.html">Accueil</a>
+      <a href="#">Formations</a>
+      <a href="a-propos.html">A propos</a>
+      <a href="#">Partenaires</a>
+      <a href="presse.html">Presse</a>
+      <a href="#">Jobs</a>
+      <a href="#">Contact</a> -->
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="#">Formations</a></li>
+        <li class="deroulant">
+          <span>Partenaires</span>
+          <ul class="sublink">
+            <li>
+              <a href="#">centre</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="presse.html">Presse</a></li>
+        <li class="deroulant">
+          <span>A-propos</span>
+          <ul class="sublink">
+            <li>
+              <a href="#">Marché Publique</a>
+              <a href="#">Publication</a>
+              <a href="#">Mission</a>
+              <a href="#">Equipe</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#">Jobs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </div>
     <div class="main__nav__help">
-      <a href="">
-        <img src="../img/pictos/help.png" alt="Aide">
+      <a href="#">
+        <img src="img/pictos/help.png" alt="Aide">
       </a>
-      <a href="">
-        <img src="../img/pictos/search.png" alt="Recherche">
+      <a href="#">
+        <img src="img/pictos/search.png" alt="Recherche">
       </a>
-      <a href="">
-        <img src="../img/pictos/sunny.png" alt="Thème">
+      <a href="#">
+        <img src="img/pictos/sunny.png" alt="Thème">
       </a>
     </div>
   </nav>
@@ -46,30 +73,37 @@
   </div>
   <header class="header">
     <!-- Slider main container -->
-    <div class="swiper header__swiper">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">
-          <div class="header__content wrapper">
-            <h1>de la formation à l'emploi</h1>
-            <span>Trouvez les formations faites pour vous</span>
-            <a href="#" class="header__btn">Nos Formations</a>
+    <div class="wrapper">
+      <div class="swiper header__swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="header__content">
+              <h1>de la formation à l'emploi</h1>
+              <span>Trouvez les formations faites pour vous</span>
+              <div class="header__form">
+                <form action="">
+                  <input type="text" placeholder="Entrez la formation que vous désirez">
+                  <input type="submit" value="">
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="header__content">
+              <h1>de la formation à l'emploi</h1>
+              <span>Trouvez les formations faites pour vous</span>
+              <a href="#" class="header__btn">Nos Stages</a>
+            </div>
           </div>
         </div>
-        <div class="swiper-slide">
-          <div class="header__content wrapper">
-            <h1>de la formation à l'emploi</h1>
-            <span>Trouvez les formations faites pour vous</span>
-            <a href="#" class="header__btn">Nos Formations</a>
-          </div>
-        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
-      <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
     </div>
   </header>
   <main class="main">
@@ -80,7 +114,7 @@
       <div class="news__primary">
         <article class="news__primary__card">
           <div>
-            <img src="../img/news/Affiche_A3_Agent de sécurité Securail_Chiara & Ayrton.png" alt="news">
+            <img src="img/news/Affiche_A3_Agent de sécurité Securail_Chiara & Ayrton.png" alt="news">
           </div>
           <div>
             <h3>Vous voulez faire partie des nouveaux Agents de sécurité de la SNCB ?</h3>
@@ -95,14 +129,14 @@
             <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la miseen page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble  des morceauxde texte pour réaliser un livre spécimen de polices de texte</p>
           </div>
           <div>
-            <a href="" class="news__primary__card__btn">En savoir plus</a>
+            <a href="news.html" class="news__primary__card__btn">En savoir plus</a>
           </div>
         </article>
       </div>
       <div class="news__secondary">
         <article class="news__secondary__card card1">          
           <div>
-            <img src="../img/news/formtruck.jpg" alt="news">
+            <img src="img/news/formtruck.jpg" alt="news">
           </div>
           <div class="news__secondary__card__title">
             <h3>Le Formtruck reprend la route</h3>
@@ -116,12 +150,12 @@
             <p>Le Formtruck de Bruxelles Formation et de ses partenaires retourne dans les quartiers à la rencontre des Bruxellois et des Bruxelloises.</p>
           </div>
           <div class="news__secondary__card__cta">
-            <a href="" class="">En savoir plus</a>
+            <a href="#" class="">En savoir plus</a>
           </div>
         </article>
         <article class="news__secondary__card card2">          
           <div>
-            <img src="../img/news/partenariat.jpg" alt="news">
+            <img src="img/news/partenariat.jpg" alt="news">
           </div>
           <div class="news__secondary__card__title">
             <h3>Appel à partenariat - mise en œuvre de parcours de formation</h3>
@@ -135,7 +169,7 @@
             <p>Bruxelles Formation relance, avec le soutien d’Actiris, l’appel à partenariat « sécurisation des parcours » pour les chercheurs et chercheuses d’emploi de moins de 30 ans, éloigné du marché de l’emploi.</p>
           </div>
           <div class="news__secondary__card__cta">
-            <a href="" class="">En savoir plus</a>
+            <a href="#" class="">En savoir plus</a>
           </div>
         </article>
         <article class="news__secondary__card card3">          
@@ -152,7 +186,7 @@
             <p>Découvrez le potentiel d’Adobe Creative Cloud pour créer des documents web en abordant la création de maquettes de site web, de pictogrammes et visuels créatifs.</p>
           </div>
           <div class="news__secondary__card__cta">
-            <a href="" class="">En savoir plus</a>
+            <a href="#" class="">En savoir plus</a>
           </div>
         </article>
         <!-- <article class="news__secondary__card card4">          
@@ -327,31 +361,72 @@
       </div>
     </section>
     <section class="partenaires__logo wrapper">
-      <a href="">
+      <a href="#">
         <img src="img/logos/actiris.png" alt="">
       </a>
-      <a href="">
+      <a href="#">
         <img src="img/logos/fse.jpg" alt="">
       </a>
-      <a href="">
+      <a href="#">
         <img src="img/logos/cocof.png" alt="">
       </a>
-      <a href="">
+      <a href="#">
         <img src="img/logos/euroguidance.jpg" alt="">
       </a>
-      <a href="">
+      <a href="#">
         <img src="img/logos/refernet.png" alt="">
       </a>
-      <a href="">
+      <a href="#">
         <img src="img/logos/synerjob.jpg" alt="">
       </a>
-      <a href="">
+      <a href="#">
         <img src="img/logos/eys.png" alt="">
       </a>
     </section>
   </main>
   <footer class="footer">
-    
+    <div class="wrapper">
+      <div class="footer__logo">
+        <img src="img/logos/bf-bleu.svg" alt="">
+      </div>
+      <div class="footer__link">
+        <h4>Liens utiles</h4>
+        <div class="footer__link__left">
+          <a href="index.html">Accueil</a>
+          <a href="#">Catalogue des formations Dorifor</a>
+          <a href="#">Centres et partenaires</a>
+          <a href="#">Jobs</a>
+          <a href="presse.html">Presse</a>
+          <a href="#">FAQ</a>
+          <a href="#">Nous contacter</a>
+        </div>
+        <div class="footer__link__right">
+          <a href="#">Plan du site</a>
+          <a href="#">Plateforme & Open Data</a>
+          <a href="#">Mentions légales</a>
+          <a href="#">Confidentilité</a>
+          <a href="#">Vie privée</a>
+          <a href="#">Déclaration d'accessibilité</a>
+          <a href="#">Transparence</a>
+        </div>
+      </div>
+      <div class="footer__socials">
+        <h4>Notre Newsletter</h4>
+        <div class="newsletter__form">
+          <form action="">
+            <input type="text" placeholder="Entrez votre mail">
+            <input type="submit" value="">
+          </form>
+        </div>
+        <h4>Nos réseaux</h4>
+        <div class="social__icon">
+          <a href="#"><img src="img/socials/178-02.png" alt=""></a>
+          <a href="#"><img src="img/socials/178-03.png" alt=""></a>
+          <a href="#"><img src="img/socials/178-04.png" alt=""></a>
+          <a href="#"><img src="img/socials/178-05.png" alt=""></a>
+        </div>
+      </div>
+    </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="js/script.min.js"></script>

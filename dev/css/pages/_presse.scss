@@ -1,0 +1,158 @@
+.presse .main .wrapper{
+  display: grid;
+  grid-template-areas: "article aside";
+  padding: 3% 0;
+  gap: 3rem;
+  grid-template-columns: 2fr 1fr;
+  h3{
+    margin-top: 1rem;
+  }
+}
+.presse__news{
+  grid-area: article;
+  padding: 0;
+  display: grid;
+  grid-template-areas: 
+  "title title"
+  "p1 p2"
+  "p3 p4";
+  gap: 2rem;
+  .presse__news__title{
+    grid-area: title;
+    h2{
+      font-weight: 500;
+      font-size: 2.8rem;
+    }
+  }
+  &__card:nth-of-type(1){
+    grid-area: p1;
+  }
+  &__card:nth-of-type(2){
+    grid-area: p2;
+  }
+  &__card:nth-of-type(3){
+    grid-area: p3;
+  }
+  &__card:nth-of-type(4){
+    grid-area: p4;
+  }
+  &__card{
+    display: flex;
+    flex-direction: column;
+    > div:nth-of-type(1){
+      width: 100%;
+      height: 250px;
+      overflow: hidden;
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    &__date{
+      font-size: 0.7rem;
+    }
+    &__text{
+      font-size: 1rem;
+    }
+    &__cta{
+      border: 1px solid transparent;
+      padding: 0.6rem;
+      margin-bottom: 10px;
+      color: $color-text;
+      display: block;
+      width: fit-content;
+      transition: .3s ease-in-out all;
+      &:hover{
+        border: 1px solid $color-text;
+        background-color: transparent;
+      }
+    }
+  }
+}
+.presse__aside{
+  grid-area: aside;
+  height: fit-content;
+  border: 1px solid #d3d3d3;
+  padding: 5%;
+  &__people{
+    > div:nth-of-type(1){
+      width: 150px;
+      height: 150px;
+      overflow: hidden;
+      border-radius: 50%;
+      margin: 0 auto;
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    p{
+      margin: 1rem auto;
+    }
+    > p:nth-of-type(1){
+      font-size: 1.2rem;
+      font-weight: 500;
+      text-align: center;
+    }
+    > p:nth-of-type(2){
+      font-size: 0.9rem;
+      font-weight: 300;
+      text-align: center;
+    }
+    > p:nth-of-type(3){
+      font-size: 0.9rem;
+      font-weight: 400;
+      text-align: center;
+      a{
+        font-weight: 400;
+      }
+    }
+    > div:nth-of-type(2){
+      width: 80%;
+      margin: 1rem auto;
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &__hr{
+    margin: 0 auto;
+    border: none;
+    height: 1px;
+    background-color: $color-text;
+    width: 80%;
+  }
+  &__post{
+    &__card{
+      > div:nth-of-type(1){
+        width: 100%;
+        height: 150px;
+        overflow: hidden;
+        margin: 1rem 0;
+        img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      a{
+      font-weight: 500;
+      font-size: 1.1rem;
+      &:hover{
+        color: orange;
+      }
+      }
+      p:nth-of-type(1){
+        font-size: 0.7rem;
+        font-weight: 300;
+      }
+      p:nth-of-type(2){
+        font-size: 0.9rem;
+        font-weight: 400;
+      }
+    }
+  }
+}

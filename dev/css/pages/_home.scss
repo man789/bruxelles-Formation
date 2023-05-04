@@ -23,6 +23,10 @@
 }
 .news__primary__card{
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  &:hover > div:nth-of-type(2){
+    color: orange;
+    transition: .3s all ease-in-out;
+  }
   > div:nth-of-type(1){
     width: 100%;
     height: 300px;
@@ -93,6 +97,10 @@
   display: flex;
   flex-direction: column;
   height: 450px;
+  &:hover > div:nth-of-type(2){
+    color: orange;
+    transition: .3s all ease-in-out;
+  }
   &__title{
     font-size: 1.1rem;
     padding: 10px;
@@ -172,6 +180,10 @@
     "formation calendar";
     gap: 2rem;
     grid-template-columns: 1fr 1fr;
+  }
+  .h2{
+    font-size: 2.8rem;
+    font-weight: 500;
   }
   .session__section{
     grid-area: title;
@@ -271,6 +283,9 @@
       background-color: white;
       border-radius: 5px;
       padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       span{
         display: block;
         text-align: center;
@@ -307,6 +322,9 @@
 .result{
   background: #144070;
   color: white;
+  .wrapper{
+    display: block !important;
+  }
   h2{
     font-size: 2.7rem;
     margin-bottom: 2rem;
@@ -338,7 +356,7 @@
 }
 
 .partenaires__logo{
-  display: flex;
+  display: flex !important;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
