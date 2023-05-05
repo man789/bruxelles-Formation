@@ -46,6 +46,28 @@
       ul{
         padding: 5px 0;
       }
+      .sublink{
+        display: none;
+        box-shadow: 0px 1px 2px #CCC;
+        background-color: white;
+        position: absolute;
+        width: 100%;
+        z-index: 1000;
+        width: fit-content;
+        li{
+          display: flex;
+          flex-direction: column;
+          padding: 0;
+        }
+        a{
+          padding: 10px;
+          border-bottom: none;
+          font-size: 1.2rem;
+          &:hover{
+            border-bottom: none;
+          }
+        }
+      }
       a{
         font-size: 1.3rem;
         display: block;
@@ -56,39 +78,51 @@
       }
     }
   }
-}
-.sublink{
-  display: none !important;
-  box-shadow: 0px 1px 2px #CCC;
-  background-color: white;
-  position: absolute;
-  width: 100%;
-  z-index: 1000;
-  width: fit-content;
-}
-.main__nav__links{
+  .deroulant > span::after{
+    content:" ▼";
+    font-size: 12px;
+  }
   > ul {
     .deroulant:hover .sublink{
-      display: flex !important;
+      display: flex;
       flex-flow: column wrap;
-      width: fit-content;
+      width: max-content;
     }
   }
-} 
-.sublink li{
-  display: flex;
-  flex-direction: column;
-  padding: 0;
 }
-.sublink a{
-  padding: 10px;
-  border-bottom: none;
-  font-size: 1.2rem !important;
-}
-.sublink a:hover{
-  border-bottom: none;
-}
-.deroulant > span::after{
-  content:" ▼";
-  font-size: 12px;
-}
+
+// .sublink{
+//   display: none;
+//   box-shadow: 0px 1px 2px #CCC;
+//   background-color: white;
+//   position: absolute;
+//   width: 100%;
+//   z-index: 1000;
+//   width: fit-content;
+// }
+// .main__nav__links{
+//   > ul {
+//     .deroulant:hover .sublink{
+//       display: flex;
+//       flex-flow: column wrap;
+//       width: fit-content;
+//     }
+//   }
+// } 
+// .sublink li{
+//   display: flex;
+//   flex-direction: column;
+//   padding: 0;
+// }
+// .sublink a{
+//   padding: 10px;
+//   border-bottom: none;
+//   font-size: 1.2rem;
+// }
+// .sublink a:hover{
+//   border-bottom: none;
+// }
+// .deroulant > span::after{
+//   content:" ▼";
+//   font-size: 12px;
+// }

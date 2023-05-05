@@ -1,7 +1,7 @@
 .header__btn{
   color: $color-white;
   border: 2px solid $color-text;
-  border-radius: 8px;
+  // border-radius: 8px;
   padding: 12px 16px;
   display: block;
   width: fit-content;
@@ -29,5 +29,81 @@
     border: 1px solid $color-text;
     color: $color-text;
     background-color: transparent;
+  }
+}
+
+.condition-ul{
+  list-style: none;
+  position: relative;
+  li{
+    margin-bottom: 1rem;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      background: url('../img/pictos/check-mark.png') center/cover;
+      margin-left: -15px;
+      top: 50%;
+      transform: translate(-50%,-50%);
+    }
+  }
+}
+
+.ul-prog{
+  list-style: none;
+  position: relative;
+  li{
+    margin-bottom: 1rem;
+    position: relative;
+    &::before{
+      content: '\f040';
+      font: normal normal normal 14px/1 FontAwesome;
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      margin-left: -15px;
+      top: 50%;
+      transform: translate(-50%,-50%);
+    }
+  }
+}
+
+.ul-warning{
+  list-style: none;
+  position: relative;
+  li{
+    margin-bottom: 1rem;
+    position: relative;
+    &::before{
+      content: "\f129";
+      font: normal normal normal 14px/1 FontAwesome;
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      margin-left: -15px;
+      top: 50%;
+      transform: translate(-50%,-50%);
+    }
+  }
+}
+
+.ul-required{
+  list-style: none;
+  position: relative;
+  li{
+    margin-bottom: 1rem;
+    position: relative;
+    &::before{
+      content: '';
+      background: url('../img/pictos/check-mark.png') center/cover;
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      margin-left: -15px;
+      top: 50%;
+      transform: translate(-50%,-50%);
+    }
   }
 }

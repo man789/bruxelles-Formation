@@ -39,6 +39,7 @@
   &__card{
     display: flex;
     flex-direction: column;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     > div:nth-of-type(1){
       width: 100%;
       height: 250px;
@@ -49,23 +50,31 @@
         object-fit: cover;
       }
     }
+    &__title{
+      padding: 0 1rem;
+    }
     &__date{
+      padding: 0 1rem;
       font-size: 0.7rem;
     }
     &__text{
+      padding: 0 1rem;
       font-size: 1rem;
     }
     &__cta{
-      border: 1px solid transparent;
-      padding: 0.6rem;
-      margin-bottom: 10px;
-      color: $color-text;
-      display: block;
-      width: fit-content;
-      transition: .3s ease-in-out all;
-      &:hover{
-        border: 1px solid $color-text;
-        background-color: transparent;
+        padding: 0 1rem;
+      a{
+        border: 1px solid transparent;
+        padding: 0.6rem;
+        margin-bottom: 10px;
+        color: $color-text;
+        display: block;
+        width: fit-content;
+        transition: .3s ease-in-out all;
+        &:hover{
+          border: 1px solid $color-text;
+          background-color: transparent;
+        }
       }
     }
   }
@@ -155,4 +164,8 @@
       }
     }
   }
+}
+
+.presse .result{
+  padding: 0;
 }
