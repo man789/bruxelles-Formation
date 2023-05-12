@@ -35,3 +35,13 @@ document.addEventListener('scroll', () => {
     }
     goTop = top;
 });
+
+let showSub = document.querySelector('.btn-click');
+let showModal = document.querySelector('.btn-clicked');
+let hideSub = document.querySelector('.btn-close');
+showSub.addEventListener('click', () =>{
+  showModal.style.display = 'block'
+});
+hideSub.addEventListener('click', () =>{
+  showModal.style.display = 'none'
+});

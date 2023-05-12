@@ -317,10 +317,8 @@
   }
 }
 
-
-
 .result{
-  background: #144070;
+  background: url('../img/banner/ba3-b.jpg') center/cover fixed;
   color: white;
   .wrapper{
     display: block !important;
@@ -328,10 +326,15 @@
   h2{
     font-size: 2.7rem;
     margin-bottom: 2rem;
+    position: relative;
+    z-index: 3;
+
   }
   &__content{
     display: flex;
     gap: 1rem;
+    position: relative;
+    z-index: 3;
     > div{
       width: calc(100%/3);
       padding: 1rem;
