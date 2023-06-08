@@ -1,0 +1,30 @@
+.img_newsletter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  div{
+    height: 300px;
+  }
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.newsletter_part{
+  background-color: #eff6fa;
+}
+.page-newsletter .formation__info{
+  border: none !important;
+}
+.newsletter_partner{
+  display: flex;
+  align-items: center;
+  img{
+    height: 70px;
+    margin-left: 3rem;
+  }
+}
+.page-newsletter .main{
+  margin-top: 100px;
+}
